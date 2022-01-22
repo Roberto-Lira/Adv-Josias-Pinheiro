@@ -1,0 +1,595 @@
+/* CONFIGURAÇÕES GERAIS */
+
+
+.container{
+	max-width: 1280px;
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+.w50{
+	float: left;
+	width: 50%;
+}
+
+.w33{
+	float: left;
+	width: 33.33%;
+}
+
+/* HEADER DESKTOP */
+
+header{
+	background-color: #0E0C26;
+	padding: 25px 2%;
+	position: fixed;
+	width: 96%;
+	top: 0;
+	z-index: 100;
+}
+
+header a{
+	text-decoration: none;
+}
+
+.logo-desktop{
+	float: left;
+	font-size: 20px;
+}
+
+.logo-desktop a{
+	color: white;
+}
+
+.logo-desktop i{
+	margin-right: 7px;
+}
+
+.menu-desktop ul{
+	float: right;
+	position: relative;
+	top: 2px;
+}
+
+.menu-desktop li{
+	display: inline;
+}
+
+.menu-desktop li:not(:first-child){
+	margin-left: 10px;
+}
+
+.menu-desktop li:hover{
+	background-color: #261810;
+	padding: 10px 10px;
+	border: 1px solid white;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.menu-desktop li:not(:hover){
+	background-color: #0E0C26;
+	transition: 0.5s;
+}
+
+.menu-desktop a{
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.menu-desktop a:hover{
+	color: white;
+	transition: 1s;
+}
+
+/* HEADER MOBILE */
+
+div.header-mobile{
+	display: none;
+}
+
+/* SECTION BANNER-PRINCIPAL */
+
+section.banner-principal{
+	background-image: url('../images/bg-1.jpg');
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+}
+
+.overlay{
+	background-color: rgba(0,0,0,0.2);
+	width: 100%;
+	height: 100%;
+}
+
+.texto-banner-principal{
+	position: relative;
+	top: -200px;
+	text-align: center;
+	z-index: 1;
+}
+
+.box-shadow{
+	display: inline-block;
+	background-color: rgba(0,0,0,0.3);
+	padding: 10px 20px;
+}
+
+.texto-banner-principal h1{
+	color: white;
+	font-size: 60px;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+.texto-banner-principal h2{
+	color: white;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+/* SECTION CARTAO */
+
+section.cartao{
+	background-color: #254A73;
+	padding: 30px 2%;
+}
+
+.cartao > .container{
+	background-color: ;
+}
+
+.cartao > .container img{
+	height: 300px;
+	float: left;
+	margin-right: 1em;
+	border: 1px solid #0E0C26;
+}
+
+.cartao h3{
+	color: white;
+	font-size: 28px;
+	line-height: 1.2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.cartao p{
+	color: white;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+/* SECTION DIFERENCIAIS */
+
+section.diferenciais{
+	background-color: #261810;
+	padding: 30px 2%;
+}
+
+.diferenciais .titulo-container{
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.container-top3{
+	background-color: ;
+}
+
+.top{
+	margin: 2em;
+	background-color: white;
+	padding: 1em;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 7px #111;
+}
+
+.top i{
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.top h3{
+	font-size: 20px;
+	line-height: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.top p{
+	font-size: 16px;
+	line-height: 1.2em;
+	font-weight: normal;
+	text-align: justify;
+}
+
+.diferenciais ul{
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+.diferenciais li{
+	margin-bottom: 1em;
+}
+
+.diferenciais li:before{
+	content: "\2713";
+	margin-right: 5px;
+}
+
+/* SECTION AREAS DE ATUAÇÃO */
+
+section.areas{
+	background-image: linear-gradient(#261810, #f0f0f0);
+	padding: 30px 2%;
+}
+
+.areas > .container{
+	background-color: ;
+}
+
+.abre-fecha{
+	background-color: ;
+	margin: 0 auto;
+	width: 600px;
+}
+
+.container-imagem{
+	float: right;
+	background-color: yellow;
+	width: 49%;
+	margin-left: 2%;
+}
+
+.container-imagem img{
+	width: 100%;
+	max-height: 420px;
+}
+
+.areas .titulo-container{
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.areas p{
+	color: white;
+	font-size: 18px;
+	line-height: 1.2em;
+	font-weight: normal;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.areas ul{
+	color: black;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+.areas li{
+	margin-bottom: .5em;
+	border: 1px solid grey;
+	padding: 5px;
+	box-shadow: inset 0px 0px 5px black;
+	cursor: pointer;
+	background-color: white;
+}
+
+.areas li:before{
+	content: "\2713";
+	margin-right: 5px;
+}
+
+.areas li:hover{
+	font-weight: bold;
+	color: darkorange;
+}
+
+/* sobre container-ul */
+
+.areas ul li.container-ul:before{
+	content: "";
+	margin: 0;
+}
+
+.areas ul li.container-ul li:before{
+	content: "\22C5";
+	margin-right: 8px;
+}
+
+.areas ul li.container-ul li:hover{
+	font-weight: normal;
+	color: black;
+}
+
+.areas ul li.container-ul{
+	background-color: ;
+	cursor: default;
+	box-shadow: none;
+	position:relative;
+	top: -10px;
+	display: none;
+}
+
+.areas ul li.container-ul li{
+	cursor: default;
+	box-shadow: none;
+	border: none;
+	background-color: ;
+	margin-bottom: 0;
+	text-align: justify;
+}
+
+/* SECTION CONTATO */
+
+section.contato{
+	padding: 30px 2%;
+	background-color: #f0f0f0;
+}
+
+.contato .titulo-container{
+	color: black;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+section.contato h4{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.endereco-container{
+	text-align: center;
+}
+
+.contato-container{
+	text-align: center;
+	display: inline-block;
+
+}
+
+.contato-container i{
+	margin: 10px 0;
+	padding: 5px 0px 5px 10px;
+	cursor: pointer;
+	display: inline-block;
+	color: rgb(255,255,255);
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 3px;
+	border-width: 1px;
+	background-color: #34af23;
+}
+
+.contato-container i > a{
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	cursor: pointer;
+	color: rgb(255,255,255);
+	font-size: 20px;
+	background-color: #34af23;
+	border-width: 0px;
+	padding-left: 3px;
+	padding-right: 6px;
+}
+
+.mapa{
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+}
+
+/*	FOOTER */
+
+footer{
+	text-align: right;
+	padding: 10px 2%;
+	background-color: #0E0C26;
+	color: white;
+	font-weight: normal;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1100px){
+
+	/* HEADER DESKTOP */
+
+	.logo-desktop{
+		float: none;
+		text-align: center;
+		padding-bottom: 10px;
+		font-size: 24px;
+	}
+
+	.menu-desktop ul{
+		float: none;
+		text-align: center;
+		padding: 5px 0;
+	}
+}
+
+@media screen and (max-width: 1000px){
+
+	/* SECTION DIFERENCIAIS */
+
+	.container-top3{
+		width: 100%;
+	}
+
+	.top{
+		width: 300px;
+		margin: 2em auto;
+	}
+}
+
+@media screen and (max-width: 800px){
+
+	/*SECTION AREAS DE ATUAÇÃO */
+
+	.abre-fecha{
+		width: 100%;
+	}
+
+	section.areas{
+		background-image: linear-gradient(#261810, #f0f0f0);
+	}
+
+	.areas p{
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 780px){
+
+	/* SECTION CARTÃO */
+
+	.cartao{
+		text-align: center;
+	}
+
+	.foto-cartao{
+		display: inline-block;
+		width: 100%;
+	}
+
+	.cartao >  .container > .foto-cartao > img{
+		float: none;
+		margin-right: 0px;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 695px){
+
+	/* HEADER DESKTOP */
+
+	.logo-desktop{
+		display: none;
+	}
+
+	.menu-desktop ul{
+		display: none;
+	}
+
+	/* HEADER MOBILE */
+
+	div.header-mobile{
+		display: block;
+	}
+
+	.logo-mobile-sintetizado{
+		display: none;
+	}
+
+	.logo-mobile{
+		float: left;
+		font-size: 20px;
+	}
+
+	.logo-mobile a{
+		color: white;
+	}
+
+	.logo-mobile i{
+		margin-right: 7px;
+	}
+
+	.menu-bar{
+		position: absolute;
+		top: 25px;
+		right: 2%;
+		background-color: ;
+		padding: 0px 0 5px 10px;
+		cursor: pointer;
+	}
+
+	.menu-bar h3{
+		color: white;
+		font-size: 20px;
+	}
+
+	.menu-mobile{
+		display: none;
+		position: absolute;
+		top: 69px;
+		right: 0;
+	}
+
+	.menu-mobile li{
+		width: 250px;
+		text-align: center;
+		border: 1px solid black;
+		padding: 15px;
+		background-color: #0E0C26;
+		cursor: pointer;
+	}
+
+	.menu-mobile a{
+		color: white;
+		font-size: 16px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+
+	.menu-mobile li:hover{
+		background-color: black;
+	}
+}
+
+@media screen and (max-width: 580px){
+
+	/* BANNER PRINCIPAL */
+
+	.texto-banner-principal h1{
+		font-size: 40px;
+	}
+
+	.texto-banner-principal h2{
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 375px){
+
+	/* HEADER MOBILE */
+
+	.logo-mobile{
+		display: none;
+	}
+
+	.logo-mobile-sintetizado{
+		display: block;
+		float: left;
+		font-size: 20px;
+	}
+
+	.logo-mobile-sintetizado a{
+		color: white;
+	}
+
+	.logo-mobile-sintetizado i{
+		margin-right: 7px;
+	}
+}
