@@ -62,7 +62,7 @@ header a{
 }
 
 .menu-desktop li:hover{
-	background-color: #261810;
+	background-color: black; /*#261810;*/
 	padding: 10px 10px;
 	border: 1px solid white;
 	border-radius: 10px;
@@ -137,7 +137,7 @@ section.banner-principal{
 /* SECTION CARTAO */
 
 section.cartao{
-	background-color: #254A73;
+	background-color: #211973;
 	padding: 30px 2%;
 }
 
@@ -170,7 +170,7 @@ section.cartao{
 /* SECTION DIFERENCIAIS */
 
 section.diferenciais{
-	background-color: #261810;
+	background-color: black; /*#261810;*/
 	padding: 30px 2%;
 }
 
@@ -233,8 +233,8 @@ section.diferenciais{
 /* SECTION AREAS DE ATUAÇÃO */
 
 section.areas{
-	background-image: linear-gradient(#261810, #f0f0f0);
-	padding: 30px 2%;
+	background-image: linear-gradient(black, #f0f0f0); /*linear-gradient(#261810, #f0f0f0);*/
+	padding: 30px 4%;
 }
 
 .areas > .container{
@@ -370,7 +370,7 @@ section.contato h4{
 
 .contato-container i{
 	margin: 10px 0;
-	padding: 5px 0px 5px 10px;
+	padding: 5px 0px 5px 6px;
 	cursor: pointer;
 	display: inline-block;
 	color: rgb(255,255,255);
@@ -412,11 +412,11 @@ footer{
 
 /* RESPONSIVO */
 
-@media screen and (max-width: 1100px){
+/*@media screen and (max-width: 1100px){
 
 	/* HEADER DESKTOP */
 
-	.logo-desktop{
+	/*.logo-desktop{
 		float: none;
 		text-align: center;
 		padding-bottom: 10px;
@@ -428,7 +428,9 @@ footer{
 		text-align: center;
 		padding: 5px 0;
 	}
-}
+}*/
+
+/* RESPONSIVO */
 
 @media screen and (max-width: 1000px){
 
@@ -453,7 +455,7 @@ footer{
 	}
 
 	section.areas{
-		background-image: linear-gradient(#261810, #f0f0f0);
+		background-image: linear-gradient(black, #f0f0f0); /*linear-gradient(#261810, #f0f0f0);*/
 	}
 
 	.areas p{
@@ -481,7 +483,7 @@ footer{
 	}
 }
 
-@media screen and (max-width: 695px){
+@media screen and (max-width: 800px){
 
 	/* HEADER DESKTOP */
 
@@ -518,7 +520,7 @@ footer{
 
 	.menu-bar{
 		position: absolute;
-		top: 25px;
+		top: 24px;
 		right: 2%;
 		background-color: ;
 		padding: 0px 0 5px 10px;
@@ -527,7 +529,7 @@ footer{
 
 	.menu-bar h3{
 		color: white;
-		font-size: 20px;
+		font-size: 22px;
 	}
 
 	.menu-mobile{
@@ -568,6 +570,29 @@ footer{
 
 	.texto-banner-principal h2{
 		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 530px){
+
+	/* SECTION CONTATO */
+
+	.endereco-container{
+		width: 100%;
+	}
+
+	.contato-container{
+		width: 100%;
+		margin-top: 1.5em;
+	}
+}
+
+@media screen and (max-width: 420px){
+
+	/* FOOTER */
+
+	footer{
+		text-align: center;
 	}
 }
 
