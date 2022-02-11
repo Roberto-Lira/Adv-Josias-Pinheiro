@@ -1,3 +1,7 @@
+/*ajeitar a area de click do menu do celular*/
+/*tirar texto justificado na area de atuação apenas no mobile*/
+
+
 /* CONFIGURAÇÕES GERAIS */
 
 
@@ -299,7 +303,7 @@ section.areas{
 
 .areas li:hover{
 	font-weight: bold;
-	color: darkorange;
+	color: #00FF7F;
 }
 
 /* sobre container-ul */
@@ -543,7 +547,7 @@ footer{
 		width: 250px;
 		text-align: center;
 		border: 1px solid black;
-		padding: 15px;
+		/*padding: 15px;*/
 		background-color: #0E0C26;
 		cursor: pointer;
 	}
@@ -553,6 +557,10 @@ footer{
 		font-size: 16px;
 		font-weight: normal;
 		text-transform: uppercase;
+
+		/*background-color: red;*/
+		display: block;
+		padding: 15px;
 	}
 
 	.menu-mobile li:hover{
