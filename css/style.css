@@ -23,11 +23,15 @@
 	width: 33.33%;
 }
 
+.hide{
+	display: none;
+}
+
 /* HEADER DESKTOP */
 
 header{
-	background-color: #0E0C26;
-	padding: 25px 2%;
+	background-color: #111;
+	padding: 15px 2%;
 	position: fixed;
 	width: 96%;
 	top: 0;
@@ -40,11 +44,17 @@ header a{
 
 .logo-desktop{
 	float: left;
-	font-size: 20px;
 }
 
 .logo-desktop a{
 	color: white;
+	font-family: 'Qwitcher Grypen', cursive;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.logo-desktop a:hover{
+	color: red;
 }
 
 .logo-desktop i{
@@ -54,11 +64,16 @@ header a{
 .menu-desktop ul{
 	float: right;
 	position: relative;
-	top: 2px;
+	top: 18px;
 }
 
 .menu-desktop li{
 	display: inline;
+	padding: 10px 10px;
+	border: 1px solid #111;
+}
+
+.menu-desktop li{
 }
 
 .menu-desktop li:not(:first-child){
@@ -66,16 +81,15 @@ header a{
 }
 
 .menu-desktop li:hover{
-	background-color: black; /*#261810;*/
-	padding: 10px 10px;
+	background-color: rgb(129, 0, 0); /*#261810;*/
 	border: 1px solid white;
 	border-radius: 10px;
-	transition: 0.5s;
+	/* transition: 0.5s; */
 }
 
 .menu-desktop li:not(:hover){
-	background-color: #0E0C26;
-	transition: 0.5s;
+	background-color: #111;
+	transition: .6s;
 }
 
 .menu-desktop a{
@@ -141,8 +155,8 @@ section.banner-principal{
 /* SECTION CARTAO */
 
 section.cartao{
-	background-color: #211973;
-	padding: 30px 2%;
+	background-image: linear-gradient(72deg, red, black);
+	padding: 100px 2% 30px 2%;
 }
 
 .cartao > .container{
@@ -188,6 +202,15 @@ section.diferenciais{
 
 .container-top3{
 	background-color: ;
+	animation-name: slide;
+	animation-duration: .75s;
+	animation-fill-mode: forwards;
+	transform: translateX(-40px);
+}
+
+.container-top3:hover{
+	position: relative;
+	top: -3px;
 }
 
 .top{
@@ -195,13 +218,25 @@ section.diferenciais{
 	background-color: white;
 	padding: 1em;
 	height: 200px;
-	border-radius: 10px;
-	box-shadow: 10px 10px 7px #111;
+	/* border-radius: 10px; */
+	box-shadow: 10px 10px 2px #222;
+}
+
+@keyframes slide{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .top i{
 	font-size: 50px;
 	margin-bottom: 10px;
+	position: relative;
+	left: 40px;
 }
 
 .top h3{
@@ -282,7 +317,7 @@ section.areas{
 
 .areas ul{
 	color: black;
-	font-size: 18px;
+	font-size: 28px;
 	font-weight: normal;
 	line-height: 1.2em;
 }
@@ -290,20 +325,23 @@ section.areas{
 .areas li{
 	margin-bottom: .5em;
 	border: 1px solid grey;
-	padding: 5px;
-	box-shadow: inset 0px 0px 5px black;
+	padding: 20px 5px;
+	box-shadow: inset 0px 0px 5px grey;
 	cursor: pointer;
 	background-color: white;
+	line-height: 1.2em;
+	padding-left: 10px;
 }
 
 .areas li:before{
-	content: "\2713";
-	margin-right: 5px;
+	content: "\1F893";
+	margin-right: 10px;
+	margin-left: 5px;
 }
 
 .areas li:hover{
 	font-weight: bold;
-	color: #00FF7F;
+	color: red;
 }
 
 /* sobre container-ul */
@@ -324,7 +362,6 @@ section.areas{
 }
 
 .areas ul li.container-ul{
-	background-color: ;
 	cursor: default;
 	box-shadow: none;
 	position:relative;
@@ -336,9 +373,11 @@ section.areas{
 	cursor: default;
 	box-shadow: none;
 	border: none;
-	background-color: ;
-	margin-bottom: 0;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: justify;
+	font-size: 18px;
 }
 
 /* SECTION CONTATO */
@@ -374,13 +413,13 @@ section.contato h4{
 
 .contato-container i{
 	margin: 10px 0;
-	padding: 5px 0px 5px 6px;
+	padding: 5px 0px 5px 10px;
 	cursor: pointer;
 	display: inline-block;
 	color: rgb(255,255,255);
 	font-weight: bold;
 	font-size: 20px;
-	border-radius: 3px;
+	border-radius: 5px;
 	border-width: 1px;
 	background-color: #34af23;
 }
@@ -391,17 +430,18 @@ section.contato h4{
 	font-weight: bold;
 	cursor: pointer;
 	color: rgb(255,255,255);
-	font-size: 20px;
+	font-size: 18px;
 	background-color: #34af23;
 	border-width: 0px;
-	padding-left: 3px;
-	padding-right: 6px;
+	padding: 13px 10px 13px 5px;
+	text-transform: uppercase;
 }
 
 .mapa{
 	text-align: center;
 	width: 100%;
 	margin-top: 30px;
+	margin-bottom: 2em;
 }
 
 /*	FOOTER */
@@ -409,7 +449,7 @@ section.contato h4{
 footer{
 	text-align: right;
 	padding: 10px 2%;
-	background-color: #0E0C26;
+	background-color: #111;
 	color: white;
 	font-weight: normal;
 }
@@ -507,15 +547,25 @@ footer{
 
 	.logo-mobile-sintetizado{
 		display: none;
+		font-family: 'Qwitcher Grypen', cursive;
+		font-size: 40px;
+		font-weight: 400;
 	}
-
+	
 	.logo-mobile{
 		float: left;
-		font-size: 20px;
+		font-family: 'Qwitcher Grypen', cursive;
+		font-size: 40px;
+		font-weight: 400;
+		margin-left: 10px;
 	}
-
+	
 	.logo-mobile a{
 		color: white;
+	}
+	
+	.logo-mobile a:hover{
+		color: red;
 	}
 
 	.logo-mobile i{
@@ -548,7 +598,7 @@ footer{
 		text-align: center;
 		border: 1px solid black;
 		/*padding: 15px;*/
-		background-color: #0E0C26;
+		background-color: #111;
 		cursor: pointer;
 	}
 
@@ -615,11 +665,12 @@ footer{
 	.logo-mobile-sintetizado{
 		display: block;
 		float: left;
-		font-size: 20px;
+		font-size: 40px;
 	}
 
 	.logo-mobile-sintetizado a{
 		color: white;
+		margin-left: 10px;
 	}
 
 	.logo-mobile-sintetizado i{
